@@ -1,0 +1,228 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+.website-name img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+}
+.website-name1 img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 20%;
+    height: 10%;
+}
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+}
+nav ul li a {
+    padding:10px;
+    margin:10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin: 40px 0;
+    width: 100%;
+    max-width: 960px;
+}
+
+h1, h2 {
+    color: #276749;
+    font-weight: bold;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+.plant {
+    background-color: #FFFFFF;
+    border: 1px solid #C8E6C9;
+    border-radius: 15px;
+    position: relative;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 180px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.plant:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8em;
+    transition: bottom 0.3s;
+    opacity: 0;
+    border: 1px solid #4CAF50;
+    border-radius: 0 0 15px 15px;
+}
+.add-to-cart:hover {
+    transition: background-color 0.3s;
+    background-color:#4CAF50;
+    cursor: pointer;
+    color: lightcyan;
+    border: 1px solid green;
+}
+.plant:hover .add-to-cart {
+    bottom: 0;
+    opacity: 1;
+}
+
+footer {
+    background-color: #276749;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+}
+.plant img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #276749;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#search {
+    width: 250px; /* Adjust the width to your preference */
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none; 
+  }
+  
+  
+  #search:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px #66afe9; 
+  }
+
+#cart-count {
+    color: green;
+}
+
+#total-cost {
+    display: none;
+}
+.qbutton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30%;
+}
+.qbutton button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #276749;
+    background-color: #276749;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.qbutton button:hover{
+    background-color: #fff;
+    color: #276749;
+}
+.qbutton span{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.plant h3{
+    margin: 10px 0;
+}
+.cbutton{
+    display: flex;
+    justify-content: center;
+}
+.cbutton button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #276749;
+    background-color: #276749;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.cbutton button:hover{
+    background-color: #fff;
+    color: #276749;
+}
+.cbutton h1 img{
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 90px; 
+    background-color: #333; 
+    color: #fff; 
+  }
+  
+ 
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px; 
+  }
+  
+
+nav li a:hover {
+    color: gold; 
+    text-decoration: dashed,white;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <title>Login</title>
+</head>
+<body>
+    <section>
+        <form class="Login">
+            <h1>Login</h1>
+            <div class="inputbox">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="inputbox">
+                <input type="password"required>
+                <label>Password</label>
+            </div>
+            <div class="forget">
+                <label><input type="checkbox"> Rember Me <a href="">Forget Password</a></label>
+            </div>
+            <button>
+                <a href="index.html" style="text-decoration: none;color: black;">Login in </a>
+            </button>
+           
+            <div class="para">
+                <p>Don't have an account ? <a href="#" id="signup">Create Here</a></p>
+            </div>
+        </form>
+        <form class="Signup">
+            <h1>Sign Up</h1>
+            <div class="inputbox">
+                <input type="text" required>
+                <label>Name</label>
+            </div>
+            <div class="inputbox">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="inputbox">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="forget">
+                <label><input type="checkbox">I agree to <a href="#">T&C</a></label>
+            </div>
+            <button>
+                <a href="index.html" style="text-decoration: none;color: black;">Sign Up</a>
+            </button>
+            <div class="para">
+                <p>You have Account Already ? <a href="#" id="login">Login</a></p>
+            </div>
+        </form>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" >
+        $(document).ready(function()
+        {
+            $("#signup").click(function(){
+                $(".Signup").show();
+                $(".Login").hide();
+            });
+            $("#login").click(function()
+            {
+                $(".Signup").hide();
+                $(".Login").show();
+            });
+        });
+    </script>
+</body>
+</html>
